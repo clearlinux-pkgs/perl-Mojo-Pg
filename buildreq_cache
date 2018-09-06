@@ -1,0 +1,6 @@
+4.09
+perl(DBD::Pg)
+perl(DBI)
+perl(Mojo::Base)
+perl(Mojolicious)
+perl(SQL::Abstract)
