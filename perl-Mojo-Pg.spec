@@ -77,13 +77,13 @@ find %{buildroot} -type f -name '*.bs' -empty -exec rm -f {} ';'
 
 %files
 %defattr(-,root,root,-)
-/usr/lib/perl5/vendor_perl/5.26.1/Mojo/Pg.pm
-/usr/lib/perl5/vendor_perl/5.26.1/Mojo/Pg/Database.pm
-/usr/lib/perl5/vendor_perl/5.26.1/Mojo/Pg/Migrations.pm
-/usr/lib/perl5/vendor_perl/5.26.1/Mojo/Pg/PubSub.pm
-/usr/lib/perl5/vendor_perl/5.26.1/Mojo/Pg/Results.pm
-/usr/lib/perl5/vendor_perl/5.26.1/Mojo/Pg/Transaction.pm
-/usr/lib/perl5/vendor_perl/5.26.1/SQL/Abstract/Pg.pm
+/usr/lib/perl5/vendor_perl/5.28.0/Mojo/Pg.pm
+/usr/lib/perl5/vendor_perl/5.28.0/Mojo/Pg/Database.pm
+/usr/lib/perl5/vendor_perl/5.28.0/Mojo/Pg/Migrations.pm
+/usr/lib/perl5/vendor_perl/5.28.0/Mojo/Pg/PubSub.pm
+/usr/lib/perl5/vendor_perl/5.28.0/Mojo/Pg/Results.pm
+/usr/lib/perl5/vendor_perl/5.28.0/Mojo/Pg/Transaction.pm
+/usr/lib/perl5/vendor_perl/5.28.0/SQL/Abstract/Pg.pm
 
 %files dev
 %defattr(-,root,root,-)
