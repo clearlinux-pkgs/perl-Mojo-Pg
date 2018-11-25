@@ -1,4 +1,4 @@
-4.11
+4.12
 perl(DBD::Pg)
 perl(DBI)
 perl(Mojo::Base)
