@@ -4,7 +4,7 @@
 #
 Name     : perl-Mojo-Pg
 Version  : 4.13
-Release  : 15
+Release  : 16
 URL      : https://cpan.metacpan.org/authors/id/S/SR/SRI/Mojo-Pg-4.13.tar.gz
 Source0  : https://cpan.metacpan.org/authors/id/S/SR/SRI/Mojo-Pg-4.13.tar.gz
 Summary  : Mojolicious ♥ PostgreSQL
@@ -25,6 +25,7 @@ BuildRequires : perl(SQL::Abstract)
 Summary: dev components for the perl-Mojo-Pg package.
 Group: Development
 Provides: perl-Mojo-Pg-devel = %{version}-%{release}
+Requires: perl-Mojo-Pg = %{version}-%{release}
 
 %description dev
 dev components for the perl-Mojo-Pg package.
