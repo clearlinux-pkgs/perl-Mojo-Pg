@@ -4,13 +4,14 @@
 #
 Name     : perl-Mojo-Pg
 Version  : 4.17
-Release  : 21
+Release  : 22
 URL      : https://cpan.metacpan.org/authors/id/S/SR/SRI/Mojo-Pg-4.17.tar.gz
 Source0  : https://cpan.metacpan.org/authors/id/S/SR/SRI/Mojo-Pg-4.17.tar.gz
-Summary  : Mojolicious ♥ PostgreSQL
+Summary  : 'Mojolicious ♥ PostgreSQL'
 Group    : Development/Tools
 License  : Artistic-2.0
 Requires: perl-Mojo-Pg-license = %{version}-%{release}
+Requires: perl-Mojo-Pg-perl = %{version}-%{release}
 BuildRequires : buildreq-cpan
 BuildRequires : perl(DBD::Pg)
 BuildRequires : perl(DBI)
@@ -26,7 +27,6 @@ Summary: dev components for the perl-Mojo-Pg package.
 Group: Development
 Provides: perl-Mojo-Pg-devel = %{version}-%{release}
 Requires: perl-Mojo-Pg = %{version}-%{release}
-Requires: perl-Mojo-Pg = %{version}-%{release}
 
 %description dev
 dev components for the perl-Mojo-Pg package.
@@ -40,8 +40,18 @@ Group: Default
 license components for the perl-Mojo-Pg package.
 
 
+%package perl
+Summary: perl components for the perl-Mojo-Pg package.
+Group: Default
+Requires: perl-Mojo-Pg = %{version}-%{release}
+
+%description perl
+perl components for the perl-Mojo-Pg package.
+
+
 %prep
 %setup -q -n Mojo-Pg-4.17
+cd %{_builddir}/Mojo-Pg-4.17
 
 %build
 export http_proxy=http://127.0.0.1:9/
@@ -66,7 +76,7 @@ make TEST_VERBOSE=1 test
 %install
 rm -rf %{buildroot}
 mkdir -p %{buildroot}/usr/share/package-licenses/perl-Mojo-Pg
-cp LICENSE %{buildroot}/usr/share/package-licenses/perl-Mojo-Pg/LICENSE
+cp %{_builddir}/Mojo-Pg-4.17/LICENSE %{buildroot}/usr/share/package-licenses/perl-Mojo-Pg/2f8018a02043ed1a43f032379e036bb6b88265f2
 if test -f Makefile.PL; then
 make pure_install PERL_INSTALL_ROOT=%{buildroot} INSTALLDIRS=vendor
 else
@@ -79,13 +89,6 @@ find %{buildroot} -type f -name '*.bs' -empty -exec rm -f {} ';'
 
 %files
 %defattr(-,root,root,-)
-/usr/lib/perl5/vendor_perl/5.28.2/Mojo/Pg.pm
-/usr/lib/perl5/vendor_perl/5.28.2/Mojo/Pg/Database.pm
-/usr/lib/perl5/vendor_perl/5.28.2/Mojo/Pg/Migrations.pm
-/usr/lib/perl5/vendor_perl/5.28.2/Mojo/Pg/PubSub.pm
-/usr/lib/perl5/vendor_perl/5.28.2/Mojo/Pg/Results.pm
-/usr/lib/perl5/vendor_perl/5.28.2/Mojo/Pg/Transaction.pm
-/usr/lib/perl5/vendor_perl/5.28.2/SQL/Abstract/Pg.pm
 
 %files dev
 %defattr(-,root,root,-)
@@ -99,4 +102,14 @@ find %{buildroot} -type f -name '*.bs' -empty -exec rm -f {} ';'
 
 %files license
 %defattr(0644,root,root,0755)
-/usr/share/package-licenses/perl-Mojo-Pg/LICENSE
+/usr/share/package-licenses/perl-Mojo-Pg/2f8018a02043ed1a43f032379e036bb6b88265f2
+
+%files perl
+%defattr(-,root,root,-)
+/usr/lib/perl5/vendor_perl/5.30.1/Mojo/Pg.pm
+/usr/lib/perl5/vendor_perl/5.30.1/Mojo/Pg/Database.pm
+/usr/lib/perl5/vendor_perl/5.30.1/Mojo/Pg/Migrations.pm
+/usr/lib/perl5/vendor_perl/5.30.1/Mojo/Pg/PubSub.pm
+/usr/lib/perl5/vendor_perl/5.30.1/Mojo/Pg/Results.pm
+/usr/lib/perl5/vendor_perl/5.30.1/Mojo/Pg/Transaction.pm
+/usr/lib/perl5/vendor_perl/5.30.1/SQL/Abstract/Pg.pm
