@@ -4,10 +4,10 @@
 #
 Name     : perl-Mojo-Pg
 Version  : 4.18
-Release  : 23
+Release  : 24
 URL      : https://cpan.metacpan.org/authors/id/S/SR/SRI/Mojo-Pg-4.18.tar.gz
 Source0  : https://cpan.metacpan.org/authors/id/S/SR/SRI/Mojo-Pg-4.18.tar.gz
-Summary  : Mojolicious ♥ PostgreSQL
+Summary  : 'Mojolicious ♥ PostgreSQL'
 Group    : Development/Tools
 License  : Artistic-2.0
 Requires: perl-Mojo-Pg-license = %{version}-%{release}
@@ -30,7 +30,6 @@ BuildRequires : perl(Test::Deep)
 Summary: dev components for the perl-Mojo-Pg package.
 Group: Development
 Provides: perl-Mojo-Pg-devel = %{version}-%{release}
-Requires: perl-Mojo-Pg = %{version}-%{release}
 Requires: perl-Mojo-Pg = %{version}-%{release}
 
 %description dev
@@ -111,10 +110,10 @@ find %{buildroot} -type f -name '*.bs' -empty -exec rm -f {} ';'
 
 %files perl
 %defattr(-,root,root,-)
-/usr/lib/perl5/vendor_perl/5.30.1/Mojo/Pg.pm
-/usr/lib/perl5/vendor_perl/5.30.1/Mojo/Pg/Database.pm
-/usr/lib/perl5/vendor_perl/5.30.1/Mojo/Pg/Migrations.pm
-/usr/lib/perl5/vendor_perl/5.30.1/Mojo/Pg/PubSub.pm
-/usr/lib/perl5/vendor_perl/5.30.1/Mojo/Pg/Results.pm
-/usr/lib/perl5/vendor_perl/5.30.1/Mojo/Pg/Transaction.pm
-/usr/lib/perl5/vendor_perl/5.30.1/SQL/Abstract/Pg.pm
+/usr/lib/perl5/vendor_perl/5.30.2/Mojo/Pg.pm
+/usr/lib/perl5/vendor_perl/5.30.2/Mojo/Pg/Database.pm
+/usr/lib/perl5/vendor_perl/5.30.2/Mojo/Pg/Migrations.pm
+/usr/lib/perl5/vendor_perl/5.30.2/Mojo/Pg/PubSub.pm
+/usr/lib/perl5/vendor_perl/5.30.2/Mojo/Pg/Results.pm
+/usr/lib/perl5/vendor_perl/5.30.2/Mojo/Pg/Transaction.pm
+/usr/lib/perl5/vendor_perl/5.30.2/SQL/Abstract/Pg.pm
