@@ -1,5 +1,5 @@
 PKG_NAME := perl-Mojo-Pg
-URL = https://cpan.metacpan.org/authors/id/S/SR/SRI/Mojo-Pg-4.18.tar.gz
+URL = https://cpan.metacpan.org/authors/id/S/SR/SRI/Mojo-Pg-4.19.tar.gz
 ARCHIVES = 
 
 include ../common/Makefile.common
