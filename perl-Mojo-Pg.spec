@@ -4,7 +4,7 @@
 #
 Name     : perl-Mojo-Pg
 Version  : 4.19
-Release  : 25
+Release  : 26
 URL      : https://cpan.metacpan.org/authors/id/S/SR/SRI/Mojo-Pg-4.19.tar.gz
 Source0  : https://cpan.metacpan.org/authors/id/S/SR/SRI/Mojo-Pg-4.19.tar.gz
 Summary  : 'Mojolicious ♥ PostgreSQL'
@@ -110,10 +110,10 @@ find %{buildroot} -type f -name '*.bs' -empty -exec rm -f {} ';'
 
 %files perl
 %defattr(-,root,root,-)
-/usr/lib/perl5/vendor_perl/5.30.2/Mojo/Pg.pm
-/usr/lib/perl5/vendor_perl/5.30.2/Mojo/Pg/Database.pm
-/usr/lib/perl5/vendor_perl/5.30.2/Mojo/Pg/Migrations.pm
-/usr/lib/perl5/vendor_perl/5.30.2/Mojo/Pg/PubSub.pm
-/usr/lib/perl5/vendor_perl/5.30.2/Mojo/Pg/Results.pm
-/usr/lib/perl5/vendor_perl/5.30.2/Mojo/Pg/Transaction.pm
-/usr/lib/perl5/vendor_perl/5.30.2/SQL/Abstract/Pg.pm
+/usr/lib/perl5/vendor_perl/5.30.3/Mojo/Pg.pm
+/usr/lib/perl5/vendor_perl/5.30.3/Mojo/Pg/Database.pm
+/usr/lib/perl5/vendor_perl/5.30.3/Mojo/Pg/Migrations.pm
+/usr/lib/perl5/vendor_perl/5.30.3/Mojo/Pg/PubSub.pm
+/usr/lib/perl5/vendor_perl/5.30.3/Mojo/Pg/Results.pm
+/usr/lib/perl5/vendor_perl/5.30.3/Mojo/Pg/Transaction.pm
+/usr/lib/perl5/vendor_perl/5.30.3/SQL/Abstract/Pg.pm
