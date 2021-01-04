@@ -1,7 +1,6 @@
-4.22
+4.23
 perl(DBD::Pg)
 perl(DBI)
-perl(Module::Runtime)
 perl(Mojo::Base)
 perl(Mojolicious)
 perl(Moo)
