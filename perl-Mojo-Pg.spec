@@ -4,7 +4,7 @@
 #
 Name     : perl-Mojo-Pg
 Version  : 4.25
-Release  : 32
+Release  : 33
 URL      : https://cpan.metacpan.org/authors/id/S/SR/SRI/Mojo-Pg-4.25.tar.gz
 Source0  : https://cpan.metacpan.org/authors/id/S/SR/SRI/Mojo-Pg-4.25.tar.gz
 Summary  : 'Mojolicious ♥ PostgreSQL'
@@ -12,6 +12,7 @@ Group    : Development/Tools
 License  : Artistic-2.0
 Requires: perl-Mojo-Pg-license = %{version}-%{release}
 Requires: perl-Mojo-Pg-perl = %{version}-%{release}
+Requires: perl(SQL::Abstract::Pg)
 BuildRequires : buildreq-cpan
 BuildRequires : perl(DBD::Pg)
 BuildRequires : perl(DBI)
