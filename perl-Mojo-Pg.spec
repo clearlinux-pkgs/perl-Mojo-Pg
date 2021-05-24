@@ -4,7 +4,7 @@
 #
 Name     : perl-Mojo-Pg
 Version  : 4.25
-Release  : 35
+Release  : 36
 URL      : https://cpan.metacpan.org/authors/id/S/SR/SRI/Mojo-Pg-4.25.tar.gz
 Source0  : https://cpan.metacpan.org/authors/id/S/SR/SRI/Mojo-Pg-4.25.tar.gz
 Summary  : 'Mojolicious ♥ PostgreSQL'
