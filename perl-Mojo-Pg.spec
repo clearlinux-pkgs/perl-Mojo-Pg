@@ -4,7 +4,7 @@
 #
 Name     : perl-Mojo-Pg
 Version  : 4.27
-Release  : 38
+Release  : 39
 URL      : https://cpan.metacpan.org/authors/id/S/SR/SRI/Mojo-Pg-4.27.tar.gz
 Source0  : https://cpan.metacpan.org/authors/id/S/SR/SRI/Mojo-Pg-4.27.tar.gz
 Summary  : 'Mojolicious ♥ PostgreSQL'
@@ -107,9 +107,4 @@ find %{buildroot} -type f -name '*.bs' -empty -exec rm -f {} ';'
 
 %files perl
 %defattr(-,root,root,-)
-/usr/lib/perl5/vendor_perl/5.34.0/Mojo/Pg.pm
-/usr/lib/perl5/vendor_perl/5.34.0/Mojo/Pg/Database.pm
-/usr/lib/perl5/vendor_perl/5.34.0/Mojo/Pg/Migrations.pm
-/usr/lib/perl5/vendor_perl/5.34.0/Mojo/Pg/PubSub.pm
-/usr/lib/perl5/vendor_perl/5.34.0/Mojo/Pg/Results.pm
-/usr/lib/perl5/vendor_perl/5.34.0/Mojo/Pg/Transaction.pm
+/usr/lib/perl5/*
