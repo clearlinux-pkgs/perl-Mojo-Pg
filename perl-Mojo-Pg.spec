@@ -4,7 +4,7 @@
 #
 Name     : perl-Mojo-Pg
 Version  : 4.27
-Release  : 40
+Release  : 41
 URL      : https://cpan.metacpan.org/authors/id/S/SR/SRI/Mojo-Pg-4.27.tar.gz
 Source0  : https://cpan.metacpan.org/authors/id/S/SR/SRI/Mojo-Pg-4.27.tar.gz
 Summary  : 'Mojolicious ♥ PostgreSQL'
