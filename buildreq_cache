@@ -1,6 +1,7 @@
 4.27
 perl(DBD::Pg)
 perl(DBI)
+perl(Digest::MD5)
 perl(Mojo::Base)
 perl(Mojolicious)
 perl(SQL::Abstract)
